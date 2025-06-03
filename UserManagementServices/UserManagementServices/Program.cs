@@ -88,7 +88,7 @@ app.UseMiddleware<GlobalExceptionHandle>();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();                         // generates JSON at /swagger/v1/swagger.json
+    app.UseSwagger();   // generates JSON at /swagger/v1/swagger.json
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Order Management API v1");
